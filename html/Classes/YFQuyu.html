@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>YFBeaconManager Class Reference</title>
+	<title>YFQuyu Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -56,23 +56,19 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/delegate">delegate</option>
+		<option value="//api/name/Id">Id</option>
+		
+		<option value="//api/name/floorId">floorId</option>
+		
+		<option value="//api/name/name">name</option>
+		
+		<option value="//api/name/points">points</option>
 		
 	</optgroup>
 	
 
 	
 
-	
-	<optgroup label="Instance Methods">
-		
-		<option value="//api/name/autoMarkCarLocation">- autoMarkCarLocation</option>
-		
-		<option value="//api/name/startRangingBeaconsIsInDoor">- startRangingBeaconsIsInDoor</option>
-		
-		<option value="//api/name/startScaningBeaconsInRegion">- startScaningBeaconsInRegion</option>
-		
-	</optgroup>
 	
 	
 </select>
@@ -87,7 +83,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">YFBeaconManager Class Reference</h1>
+					<h1 class="title">YFQuyu Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -96,7 +92,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>YFBeaconManager.h<br />YFBeaconManager.m</td>
+	<td>YFQuyu.h<br />YFQuyu.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -106,7 +102,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>获取蓝牙的类</p>
+						<p>分区数据</p>
 					</div>
 					
 					
@@ -122,8 +118,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/delegate" title="delegate"></a>
-	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	<a name="//api/name/Id" title="Id"></a>
+	<h3 class="method-title"><code><a href="#//api/name/Id">&nbsp;&nbsp;Id</a></code>
 </h3>
 
 	<div class="method-info">
@@ -133,12 +129,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>蓝牙回调</p>
+				<p>Id</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;YFBeaconProtocol&gt; delegate</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *Id</code></div>
 
 		    
 			
@@ -150,7 +146,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>蓝牙回调</p>
+				<p>Id</p>
 			</div>
 			
 
@@ -161,15 +157,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
+				<p><code class="declared-in-ref">YFQuyu.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/startScaningBeaconsInRegion" title="startScaningBeaconsInRegion"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startScaningBeaconsInRegion">&ndash;&nbsp;startScaningBeaconsInRegion</a></code>
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="method-title"><code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
 </h3>
 
 	<div class="method-info">
@@ -179,12 +175,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>在进入无蓝牙区域的时候开启扫描任务，再次进入蓝牙区域的时候重新进行定位</p>
+				<p>名称</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)startScaningBeaconsInRegion</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *name</code></div>
 
 		    
 			
@@ -196,7 +192,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>在进入无蓝牙区域的时候开启扫描任务，再次进入蓝牙区域的时候重新进行定位</p>
+				<p>名称</p>
 			</div>
 			
 
@@ -207,15 +203,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
+				<p><code class="declared-in-ref">YFQuyu.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/startRangingBeaconsIsInDoor" title="startRangingBeaconsIsInDoor"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startRangingBeaconsIsInDoor">&ndash;&nbsp;startRangingBeaconsIsInDoor</a></code>
+	<a name="//api/name/floorId" title="floorId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/floorId">&nbsp;&nbsp;floorId</a></code>
 </h3>
 
 	<div class="method-info">
@@ -225,12 +221,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>判断蓝牙是不是在停车场内</p>
+				<p>楼层<a href="#//api/name/Id">Id</a></p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)startRangingBeaconsIsInDoor</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *floorId</code></div>
 
 		    
 			
@@ -242,7 +238,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>判断蓝牙是不是在停车场内</p>
+				<p>楼层<a href="#//api/name/Id">Id</a></p>
 			</div>
 			
 
@@ -253,15 +249,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
+				<p><code class="declared-in-ref">YFQuyu.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/autoMarkCarLocation" title="autoMarkCarLocation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/autoMarkCarLocation">&ndash;&nbsp;autoMarkCarLocation</a></code>
+	<a name="//api/name/points" title="points"></a>
+	<h3 class="method-title"><code><a href="#//api/name/points">&nbsp;&nbsp;points</a></code>
 </h3>
 
 	<div class="method-info">
@@ -271,12 +267,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>自动标记车的位置</p>
+				<p>区域点集合</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)autoMarkCarLocation</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *points</code></div>
 
 		    
 			
@@ -288,7 +284,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>自动标记车的位置</p>
+				<p>区域点集合</p>
 			</div>
 			
 
@@ -299,7 +295,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
+				<p><code class="declared-in-ref">YFQuyu.h</code></p>
 			</div>
 			
 			

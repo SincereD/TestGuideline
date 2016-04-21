@@ -58,9 +58,23 @@
 	
 	<optgroup label="Instance Methods">
 		
+		<option value="//api/name/loadAllDataWithRegion:">- loadAllDataWithRegion:</option>
+		
+		<option value="//api/name/loadFloorsWithRegion:">- loadFloorsWithRegion:</option>
+		
+		<option value="//api/name/loadMapWithRegion:floor:">- loadMapWithRegion:floor:</option>
+		
+		<option value="//api/name/loadPathWithRegion:floor:">- loadPathWithRegion:floor:</option>
+		
+		<option value="//api/name/loadQuyuHeatWithRegion:floor:">- loadQuyuHeatWithRegion:floor:</option>
+		
 		<option value="//api/name/loadQuyuUnitsDataWithFloor:">- loadQuyuUnitsDataWithFloor:</option>
 		
 		<option value="//api/name/loadRgionPassData:">- loadRgionPassData:</option>
+		
+		<option value="//api/name/loadUnitsWithRegion:floor:">- loadUnitsWithRegion:floor:</option>
+		
+		<option value="//api/name/removeMapWithRegion:floor:">- removeMapWithRegion:floor:</option>
 		
 	</optgroup>
 	
@@ -104,6 +118,64 @@
 
 						<div class="task-list">
 							<div class="section-method">
+	<a name="//api/name/loadAllDataWithRegion:" title="loadAllDataWithRegion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadAllDataWithRegion:">&ndash;&nbsp;loadAllDataWithRegion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取Region下的总体数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loadAllDataWithRegion:(YFRegion *)<em>aRegion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegion</code></th>
+						<td><p>Region</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取Region下的总体数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFDataManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/loadRgionPassData:" title="loadRgionPassData:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/loadRgionPassData:">&ndash;&nbsp;loadRgionPassData:</a></code>
 </h3>
@@ -124,6 +196,18 @@
 
 		    
 			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegion</code></th>
+						<td><p>Region</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
 
 			
 
@@ -133,6 +217,379 @@
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>获取Region下的贯穿数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFDataManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadFloorsWithRegion:" title="loadFloorsWithRegion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadFloorsWithRegion:">&ndash;&nbsp;loadFloorsWithRegion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取Region下的Floors数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loadFloorsWithRegion:(YFRegion *)<em>aRegion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegion</code></th>
+						<td><p>Region</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取Region下的Floors数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFDataManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadUnitsWithRegion:floor:" title="loadUnitsWithRegion:floor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadUnitsWithRegion:floor:">&ndash;&nbsp;loadUnitsWithRegion:floor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取对应Region中某个Floor的Unit数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loadUnitsWithRegion:(YFRegion *)<em>aRegion</em> floor:(YFFloor *)<em>aFLoor</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegion</code></th>
+						<td><p>Region</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aFLoor</code></th>
+						<td><p>Floor</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取对应Region中某个Floor的Unit数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFDataManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadPathWithRegion:floor:" title="loadPathWithRegion:floor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadPathWithRegion:floor:">&ndash;&nbsp;loadPathWithRegion:floor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取Path数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loadPathWithRegion:(YFRegion *)<em>aRegion</em> floor:(YFFloor *)<em>aFLoor</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegion</code></th>
+						<td><p>Region</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aFLoor</code></th>
+						<td><p>Floor</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取Path数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFDataManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadMapWithRegion:floor:" title="loadMapWithRegion:floor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadMapWithRegion:floor:">&ndash;&nbsp;loadMapWithRegion:floor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取Map数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loadMapWithRegion:(YFRegion *)<em>aRegion</em> floor:(YFFloor *)<em>aFLoor</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegion</code></th>
+						<td><p>Region</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aFLoor</code></th>
+						<td><p>Floor</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取Map数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFDataManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeMapWithRegion:floor:" title="removeMapWithRegion:floor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeMapWithRegion:floor:">&ndash;&nbsp;removeMapWithRegion:floor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除Map数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeMapWithRegion:(YFRegion *)<em>aRegion</em> floor:(YFFloor *)<em>aFLoor</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegion</code></th>
+						<td><p>Region</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aFLoor</code></th>
+						<td><p>Floor</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>删除Map数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFDataManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadQuyuHeatWithRegion:floor:" title="loadQuyuHeatWithRegion:floor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadQuyuHeatWithRegion:floor:">&ndash;&nbsp;loadQuyuHeatWithRegion:floor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取热力图数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loadQuyuHeatWithRegion:(YFRegion *)<em>region</em> floor:(YFFloor *)<em>floor</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>region</code></th>
+						<td><p>区域</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>floor</code></th>
+						<td><p>楼层</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取热力图数据</p>
 			</div>
 			
 

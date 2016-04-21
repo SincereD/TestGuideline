@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>YFGeneralManager Class Reference</title>
+	<title>YFMapData Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -43,6 +43,8 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 
 	
 	
@@ -54,25 +56,19 @@
 	
 
 	
-	<optgroup label="Class Methods">
-		
-		<option value="//api/name/sharedManager">+ sharedManager</option>
-		
-	</optgroup>
-	
 
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/currentRegion">- currentRegion</option>
+		<option value="//api/name/clearData">- clearData</option>
 		
-		<option value="//api/name/currentregions">- currentregions</option>
+		<option value="//api/name/getNearUnitWIthCurreentPosition:targets:">- getNearUnitWIthCurreentPosition:targets:</option>
 		
-		<option value="//api/name/initSessionWithUserName:delegate:">- initSessionWithUserName:delegate:</option>
+		<option value="//api/name/getUnitsWithUnitType:">- getUnitsWithUnitType:</option>
 		
-		<option value="//api/name/isLoginSuccess">- isLoginSuccess</option>
+		<option value="//api/name/getUnitsWithUnitTypes:">- getUnitsWithUnitTypes:</option>
 		
-		<option value="//api/name/onLoadLocalRegionsData">- onLoadLocalRegionsData</option>
+		<option value="//api/name/initWithRegion:floor:delegate:">- initWithRegion:floor:delegate:</option>
 		
 	</optgroup>
 	
@@ -89,7 +85,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">YFGeneralManager Class Reference</h1>
+					<h1 class="title">YFMapData Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -98,12 +94,20 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>YFGeneralManager.h<br />YFGeneralManager.m</td>
+	<td>YFMapData.h<br />YFMapData.m</td>
 </tr>
 						</tbody></table></div>
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>地图数据</p>
+					</div>
+					
+					
 
 					
 					
@@ -116,8 +120,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/sharedManager" title="sharedManager"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sharedManager">+&nbsp;sharedManager</a></code>
+	<a name="//api/name/initWithRegion:floor:delegate:" title="initWithRegion:floor:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithRegion:floor:delegate:">&ndash;&nbsp;initWithRegion:floor:delegate:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -127,21 +131,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>单例对象</p>
+				<p>初始化</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (instancetype)sharedManager</code></div>
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithRegion:(YFRegion *)<em>region</em> floor:(YFFloor *)<em>floor</em> delegate:(id)<em>delegate</em></code></div>
 
 		    
 			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>instancetype</p>
-			</div>
 			
 
 			
@@ -149,7 +148,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>单例对象</p>
+				<p>初始化</p>
 			</div>
 			
 
@@ -160,15 +159,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
+				<p><code class="declared-in-ref">YFMapData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/initSessionWithUserName:delegate:" title="initSessionWithUserName:delegate:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initSessionWithUserName:delegate:">&ndash;&nbsp;initSessionWithUserName:delegate:</a></code>
+	<a name="//api/name/clearData" title="clearData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearData">&ndash;&nbsp;clearData</a></code>
 </h3>
 
 	<div class="method-info">
@@ -178,12 +177,58 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>初始化注册信息</p>
+				<p>清除数据</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)initSessionWithUserName:(NSString *)<em>userName</em> delegate:(id)<em>delegate</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)clearData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>清除数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUnitsWithUnitType:" title="getUnitsWithUnitType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUnitsWithUnitType:">&ndash;&nbsp;getUnitsWithUnitType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据Type获取unit数组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getUnitsWithUnitType:(NSInteger)<em>typeId</em></code></div>
 
 		    
 			
@@ -192,13 +237,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>userName</code></th>
-						<td><p>用户名</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>delegate</code></th>
-						<td><p>回调对象</p></td>
+						<th scope="row" class="argument-name"><code>typeId</code></th>
+						<td><p>type</p></td>
 					</tr>
 				
 				</table>
@@ -206,13 +246,18 @@
 			
 
 			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>unit数组</p>
+			</div>
+			
 
 			
 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>初始化注册信息</p>
+				<p>根据Type获取unit数组</p>
 			</div>
 			
 
@@ -223,15 +268,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
+				<p><code class="declared-in-ref">YFMapData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/isLoginSuccess" title="isLoginSuccess"></a>
-	<h3 class="method-title"><code><a href="#//api/name/isLoginSuccess">&ndash;&nbsp;isLoginSuccess</a></code>
+	<a name="//api/name/getUnitsWithUnitTypes:" title="getUnitsWithUnitTypes:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUnitsWithUnitTypes:">&ndash;&nbsp;getUnitsWithUnitTypes:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -241,20 +286,32 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>检测是否登陆成功</p>
+				<p>根据多个Type获取unit数组</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL)isLoginSuccess</code></div>
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getUnitsWithUnitTypes:(NSArray *)<em>typeId</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>typeId</code></th>
+						<td><p>type</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>（YES成功、NO失败）</p>
+				<p>unit数组</p>
 			</div>
 			
 
@@ -263,7 +320,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>检测是否登陆成功</p>
+				<p>根据多个Type获取unit数组</p>
 			</div>
 			
 
@@ -274,15 +331,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
+				<p><code class="declared-in-ref">YFMapData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/currentRegion" title="currentRegion"></a>
-	<h3 class="method-title"><code><a href="#//api/name/currentRegion">&ndash;&nbsp;currentRegion</a></code>
+	<a name="//api/name/getNearUnitWIthCurreentPosition:targets:" title="getNearUnitWIthCurreentPosition:targets:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNearUnitWIthCurreentPosition:targets:">&ndash;&nbsp;getNearUnitWIthCurreentPosition:targets:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -292,21 +349,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取当前的Region</p>
+				<p>以下请参考YFPath类方法说明</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (YFRegion *)currentRegion</code></div>
+			<div class="method-subsection method-declaration"><code>- (YFUnit *)getNearUnitWIthCurreentPosition:(YFPosition *)<em>p</em> targets:(NSArray *)<em>targets</em></code></div>
 
 		    
 			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Region</p>
-			</div>
 			
 
 			
@@ -314,7 +366,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取当前的Region</p>
+				<p>以下请参考YFPath类方法说明</p>
 			</div>
 			
 
@@ -325,109 +377,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/currentregions" title="currentregions"></a>
-	<h3 class="method-title"><code><a href="#//api/name/currentregions">&ndash;&nbsp;currentregions</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>获取当前注册信息下对应的Regions</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSArray *)currentregions</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Region集合</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取当前注册信息下对应的Regions</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/onLoadLocalRegionsData" title="onLoadLocalRegionsData"></a>
-	<h3 class="method-title"><code><a href="#//api/name/onLoadLocalRegionsData">&ndash;&nbsp;onLoadLocalRegionsData</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>加载缓存all<a href="#//api/name/regions">regions</a></p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)onLoadLocalRegionsData</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>(YES加载成功、NO加载失败)</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>加载缓存all<a href="#//api/name/regions">regions</a></p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
+				<p><code class="declared-in-ref">YFMapData.h</code></p>
 			</div>
 			
 			

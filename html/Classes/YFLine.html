@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>YFDataTransfer Class Reference</title>
+	<title>YFLine Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -54,31 +54,45 @@
 
 	
 	
-
-	
-	<optgroup label="Class Methods">
+	<optgroup label="Properties">
 		
-		<option value="//api/name/transFerDataToUnit:">+ transFerDataToUnit:</option>
+		<option value="//api/name/ePoint">ePoint</option>
 		
-		<option value="//api/name/transferDataToFloor:">+ transferDataToFloor:</option>
+		<option value="//api/name/lineState">lineState</option>
 		
-		<option value="//api/name/transferDataToLengthPre:">+ transferDataToLengthPre:</option>
+		<option value="//api/name/sPoint">sPoint</option>
 		
-		<option value="//api/name/transferDataToPassData:">+ transferDataToPassData:</option>
+		<option value="//api/name/selected">selected</option>
 		
-		<option value="//api/name/transferDataToPassUnit:">+ transferDataToPassUnit:</option>
-		
-		<option value="//api/name/transferDataToPosition:">+ transferDataToPosition:</option>
-		
-		<option value="//api/name/transferDataToQuyu:">+ transferDataToQuyu:</option>
-		
-		<option value="//api/name/transferDataToRegion:">+ transferDataToRegion:</option>
-		
-		<option value="//api/name/transferDataToRegionData:">+ transferDataToRegionData:</option>
+		<option value="//api/name/touchRect">touchRect</option>
 		
 	</optgroup>
 	
 
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/getLineWithString:">+ getLineWithString:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/JSONDict">- JSONDict</option>
+		
+		<option value="//api/name/changeToState:">- changeToState:</option>
+		
+		<option value="//api/name/containPosition:">- containPosition:</option>
+		
+		<option value="//api/name/equalLine:">- equalLine:</option>
+		
+		<option value="//api/name/exchangePoint">- exchangePoint</option>
+		
+		<option value="//api/name/initWithStartPosition:endPosition:lineState:">- initWithStartPosition:endPosition:lineState:</option>
+		
+	</optgroup>
 	
 	
 </select>
@@ -93,7 +107,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">YFDataTransfer Class Reference</h1>
+					<h1 class="title">YFLine Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -102,7 +116,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>YFDataTransfer.h<br />YFDataTransfer.m</td>
+	<td>YFLine.h<br />YFLine.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -112,7 +126,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>数据类型转化</p>
+						<p>路线</p>
 					</div>
 					
 					
@@ -128,8 +142,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/transferDataToRegionData:" title="transferDataToRegionData:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/transferDataToRegionData:">+&nbsp;transferDataToRegionData:</a></code>
+	<a name="//api/name/initWithStartPosition:endPosition:lineState:" title="initWithStartPosition:endPosition:lineState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithStartPosition:endPosition:lineState:">&ndash;&nbsp;initWithStartPosition:endPosition:lineState:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -139,12 +153,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>字典数据转YFregionData</p>
+				<p>初始化</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (YFRegionData *)transferDataToRegionData:(id)<em>dataDict</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithStartPosition:(YFPosition *)<em>sp</em> endPosition:(YFPosition *)<em>ep</em> lineState:(YFLineState)<em>lineState</em></code></div>
 
 		    
 			
@@ -153,8 +167,18 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>regionDict</code></th>
-						<td><p>NSDictionary</p></td>
+						<th scope="row" class="argument-name"><code>sp</code></th>
+						<td><p>起点</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ep</code></th>
+						<td><p>终点</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lineState</code></th>
+						<td><p>路线状态</p></td>
 					</tr>
 				
 				</table>
@@ -164,7 +188,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p><a href="../Classes/YFRegionData.html">YFRegionData</a></p>
+				<p>instancetype</p>
 			</div>
 			
 
@@ -173,7 +197,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>字典数据转YFregionData</p>
+				<p>初始化</p>
 			</div>
 			
 
@@ -184,15 +208,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFDataTransfer.h</code></p>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/transferDataToRegion:" title="transferDataToRegion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/transferDataToRegion:">+&nbsp;transferDataToRegion:</a></code>
+	<a name="//api/name/getLineWithString:" title="getLineWithString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLineWithString:">+&nbsp;getLineWithString:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -202,12 +226,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>字典数据转YFregion</p>
+				<p>根据路线名称获取路线</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (YFRegion *)transferDataToRegion:(id)<em>regionDict</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (instancetype)getLineWithString:(NSArray *)<em>nameArray</em></code></div>
 
 		    
 			
@@ -216,8 +240,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>regionDict</code></th>
-						<td><p>NSDictionary</p></td>
+						<th scope="row" class="argument-name"><code>nameArray</code></th>
+						<td><p>路线名字数组</p></td>
 					</tr>
 				
 				</table>
@@ -227,7 +251,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p><a href="../Classes/YFRegion.html">YFRegion</a></p>
+				<p>instancetype</p>
 			</div>
 			
 
@@ -236,7 +260,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>字典数据转YFregion</p>
+				<p>根据路线名称获取路线</p>
 			</div>
 			
 
@@ -247,15 +271,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFDataTransfer.h</code></p>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/transferDataToFloor:" title="transferDataToFloor:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/transferDataToFloor:">+&nbsp;transferDataToFloor:</a></code>
+	<a name="//api/name/exchangePoint" title="exchangePoint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exchangePoint">&ndash;&nbsp;exchangePoint</a></code>
 </h3>
 
 	<div class="method-info">
@@ -265,33 +289,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>字典数据转<a href="../Classes/YFFloor.html">YFFloor</a></p>
+				<p>切换契丹终点</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (YFFloor *)transferDataToFloor:(id)<em>floorDict</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)exchangePoint</code></div>
 
 		    
 			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>floorDict</code></th>
-						<td><p>NSDictionary</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p><a href="../Classes/YFFloor.html">YFFloor</a></p>
-			</div>
 			
 
 			
@@ -299,7 +306,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>字典数据转<a href="../Classes/YFFloor.html">YFFloor</a></p>
+				<p>切换契丹终点</p>
 			</div>
 			
 
@@ -310,15 +317,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFDataTransfer.h</code></p>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/transferDataToQuyu:" title="transferDataToQuyu:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/transferDataToQuyu:">+&nbsp;transferDataToQuyu:</a></code>
+	<a name="//api/name/equalLine:" title="equalLine:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/equalLine:">&ndash;&nbsp;equalLine:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -328,12 +335,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>字典数据转换<a href="../Classes/YFQuyu.html">YFQuyu</a></p>
+				<p>判断路线是否相同</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (YFQuyu *)transferDataToQuyu:(id)<em>quyuDict</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)equalLine:(YFLine *)<em>line</em></code></div>
 
 		    
 			
@@ -342,8 +349,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>quyuDict</code></th>
-						<td><p>NSDictionary</p></td>
+						<th scope="row" class="argument-name"><code>line</code></th>
+						<td><p>YFLine</p></td>
 					</tr>
 				
 				</table>
@@ -353,7 +360,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p><a href="../Classes/YFQuyu.html">YFQuyu</a></p>
+				<p>（YES相同、NO不相同）</p>
 			</div>
 			
 
@@ -362,7 +369,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>字典数据转换<a href="../Classes/YFQuyu.html">YFQuyu</a></p>
+				<p>判断路线是否相同</p>
 			</div>
 			
 
@@ -373,15 +380,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFDataTransfer.h</code></p>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/transFerDataToUnit:" title="transFerDataToUnit:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/transFerDataToUnit:">+&nbsp;transFerDataToUnit:</a></code>
+	<a name="//api/name/changeToState:" title="changeToState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changeToState:">&ndash;&nbsp;changeToState:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -391,12 +398,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>字典数据转<a href="../Classes/YFUnit.html">YFUnit</a></p>
+				<p>切换路线状态</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (YFUnit *)transFerDataToUnit:(id)<em>unitDict</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)changeToState:(YFLineState)<em>state</em></code></div>
 
 		    
 			
@@ -405,8 +412,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>unitDict</code></th>
-						<td><p>NSDictionary</p></td>
+						<th scope="row" class="argument-name"><code>state</code></th>
+						<td><p>路线状态</p></td>
 					</tr>
 				
 				</table>
@@ -414,18 +421,13 @@
 			
 
 			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p><a href="../Classes/YFUnit.html">YFUnit</a></p>
-			</div>
-			
 
 			
 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>字典数据转<a href="../Classes/YFUnit.html">YFUnit</a></p>
+				<p>切换路线状态</p>
 			</div>
 			
 
@@ -436,15 +438,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFDataTransfer.h</code></p>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/transferDataToPosition:" title="transferDataToPosition:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/transferDataToPosition:">+&nbsp;transferDataToPosition:</a></code>
+	<a name="//api/name/containPosition:" title="containPosition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/containPosition:">&ndash;&nbsp;containPosition:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -454,12 +456,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>字典数据转<a href="../Classes/YFPosition.html">YFPosition</a></p>
+				<p>判断路线是否包含点</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (YFPosition *)transferDataToPosition:(id)<em>positionDict</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)containPosition:(YFPosition *)<em>aPosition</em></code></div>
 
 		    
 			
@@ -468,7 +470,7 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>positionDict</code></th>
+						<th scope="row" class="argument-name"><code>aPosition</code></th>
 						<td><p>点</p></td>
 					</tr>
 				
@@ -479,7 +481,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>YFPosition*</p>
+				<p>（YES包含、NO不包含）</p>
 			</div>
 			
 
@@ -488,7 +490,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>字典数据转<a href="../Classes/YFPosition.html">YFPosition</a></p>
+				<p>判断路线是否包含点</p>
 			</div>
 			
 
@@ -499,15 +501,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFDataTransfer.h</code></p>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/transferDataToLengthPre:" title="transferDataToLengthPre:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/transferDataToLengthPre:">+&nbsp;transferDataToLengthPre:</a></code>
+	<a name="//api/name/JSONDict" title="JSONDict"></a>
+	<h3 class="method-title"><code><a href="#//api/name/JSONDict">&ndash;&nbsp;JSONDict</a></code>
 </h3>
 
 	<div class="method-info">
@@ -517,32 +519,20 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>字典数据转路线前置点</p>
+				<p>生成路线JSON数据</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (YFLengthPre *)transferDataToLengthPre:(id)<em>length</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)JSONDict</code></div>
 
 		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>length</code></th>
-						<td><p>JSON</p></td>
-					</tr>
-				
-				</table>
-			</div>
 			
 
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p><a href="../Classes/YFLengthPre.html">YFLengthPre</a></p>
+				<p>NSDictionary</p>
 			</div>
 			
 
@@ -551,7 +541,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>字典数据转路线前置点</p>
+				<p>生成路线JSON数据</p>
 			</div>
 			
 
@@ -562,15 +552,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFDataTransfer.h</code></p>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/transferDataToPassData:" title="transferDataToPassData:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/transferDataToPassData:">+&nbsp;transferDataToPassData:</a></code>
+	<a name="//api/name/sPoint" title="sPoint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sPoint">&nbsp;&nbsp;sPoint</a></code>
 </h3>
 
 	<div class="method-info">
@@ -580,33 +570,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>字典数据转转连通性数据</p>
+				<p>起点</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (YFPassData *)transferDataToPassData:(id)<em>passdata</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) YFPosition *sPoint</code></div>
 
 		    
 			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>passdata</code></th>
-						<td><p>JSON</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p><a href="../Classes/YFPassData.html">YFPassData</a></p>
-			</div>
 			
 
 			
@@ -614,7 +587,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>字典数据转转连通性数据</p>
+				<p>起点</p>
 			</div>
 			
 
@@ -625,15 +598,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFDataTransfer.h</code></p>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/transferDataToPassUnit:" title="transferDataToPassUnit:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/transferDataToPassUnit:">+&nbsp;transferDataToPassUnit:</a></code>
+	<a name="//api/name/ePoint" title="ePoint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ePoint">&nbsp;&nbsp;ePoint</a></code>
 </h3>
 
 	<div class="method-info">
@@ -643,33 +616,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>字典数据转连通性数据模型</p>
+				<p>终点</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (YFPassUnit *)transferDataToPassUnit:(id)<em>passUnit</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) YFPosition *ePoint</code></div>
 
 		    
 			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>passUnit</code></th>
-						<td><p>JSON</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p><a href="../Classes/YFPassUnit.html">YFPassUnit</a></p>
-			</div>
 			
 
 			
@@ -677,7 +633,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>字典数据转连通性数据模型</p>
+				<p>终点</p>
 			</div>
 			
 
@@ -688,7 +644,145 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFDataTransfer.h</code></p>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/touchRect" title="touchRect"></a>
+	<h3 class="method-title"><code><a href="#//api/name/touchRect">&nbsp;&nbsp;touchRect</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>手势触发区域</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) CGRect touchRect</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>手势触发区域</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lineState" title="lineState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lineState">&nbsp;&nbsp;lineState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>路线状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) YFLineState lineState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>路线状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/selected" title="selected"></a>
+	<h3 class="method-title"><code><a href="#//api/name/selected">&nbsp;&nbsp;selected</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>路线是否被选中</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL selected</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>路线是否被选中</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFLine.h</code></p>
 			</div>
 			
 			

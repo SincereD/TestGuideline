@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>YFRegion Class Reference</title>
+	<title>YFRegionData Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -58,8 +58,6 @@
 		
 		<option value="//api/name/Id">Id</option>
 		
-		<option value="//api/name/aDescription">aDescription</option>
-		
 		<option value="//api/name/address">address</option>
 		
 		<option value="//api/name/advertList">advertList</option>
@@ -76,11 +74,15 @@
 		
 		<option value="//api/name/floorList">floorList</option>
 		
+		<option value="//api/name/floorPassList">floorPassList</option>
+		
 		<option value="//api/name/latitude">latitude</option>
 		
 		<option value="//api/name/longitude">longitude</option>
 		
 		<option value="//api/name/modifyTime">modifyTime</option>
+		
+		<option value="//api/name/modifyUser">modifyUser</option>
 		
 		<option value="//api/name/name">name</option>
 		
@@ -110,6 +112,16 @@
 	
 
 	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/containFloor:">- containFloor:</option>
+		
+		<option value="//api/name/findPathByFloor:">- findPathByFloor:</option>
+		
+		<option value="//api/name/getUnitsWithFloor:">- getUnitsWithFloor:</option>
+		
+	</optgroup>
+	
 	
 </select>
 						</label>
@@ -123,7 +135,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">YFRegion Class Reference</h1>
+					<h1 class="title">YFRegionData Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -132,7 +144,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>YFRegion.h<br />YFRegion.m</td>
+	<td>YFRegionData.h<br />YFRegionData.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -142,7 +154,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>区域数据</p>
+						<p>单个Region的全部数据</p>
 					</div>
 					
 					
@@ -158,8 +170,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/Id" title="Id"></a>
-	<h3 class="method-title"><code><a href="#//api/name/Id">&nbsp;&nbsp;Id</a></code>
+	<a name="//api/name/modifyUser" title="modifyUser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/modifyUser">&nbsp;&nbsp;modifyUser</a></code>
 </h3>
 
 	<div class="method-info">
@@ -169,12 +181,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>区域编号</p>
+				<p>编辑人</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *Id</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *modifyUser</code></div>
 
 		    
 			
@@ -186,7 +198,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域编号</p>
+				<p>编辑人</p>
 			</div>
 			
 
@@ -197,15 +209,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/name" title="name"></a>
-	<h3 class="method-title"><code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+	<a name="//api/name/status" title="status"></a>
+	<h3 class="method-title"><code><a href="#//api/name/status">&nbsp;&nbsp;status</a></code>
 </h3>
 
 	<div class="method-info">
@@ -215,12 +227,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>区域名称</p>
+				<p>状态</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *name</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *status</code></div>
 
 		    
 			
@@ -232,7 +244,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域名称</p>
+				<p>状态</p>
 			</div>
 			
 
@@ -243,15 +255,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/regionType" title="regionType"></a>
-	<h3 class="method-title"><code><a href="#//api/name/regionType">&nbsp;&nbsp;regionType</a></code>
+	<a name="//api/name/collectStatus" title="collectStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/collectStatus">&nbsp;&nbsp;collectStatus</a></code>
 </h3>
 
 	<div class="method-info">
@@ -261,12 +273,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>区域类型</p>
+				<p>采集状态</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *regionType</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *collectStatus</code></div>
 
 		    
 			
@@ -278,7 +290,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域类型</p>
+				<p>采集状态</p>
 			</div>
 			
 
@@ -289,15 +301,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/cityId" title="cityId"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cityId">&nbsp;&nbsp;cityId</a></code>
+	<a name="//api/name/modifyTime" title="modifyTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/modifyTime">&nbsp;&nbsp;modifyTime</a></code>
 </h3>
 
 	<div class="method-info">
@@ -307,12 +319,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>区域所在城市id</p>
+				<p>编辑时间</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *cityId</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *modifyTime</code></div>
 
 		    
 			
@@ -324,7 +336,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域所在城市id</p>
+				<p>编辑时间</p>
 			</div>
 			
 
@@ -335,145 +347,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/aDescription" title="aDescription"></a>
-	<h3 class="method-title"><code><a href="#//api/name/aDescription">&nbsp;&nbsp;aDescription</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>区域描述信息</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *aDescription</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域描述信息</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/address" title="address"></a>
-	<h3 class="method-title"><code><a href="#//api/name/address">&nbsp;&nbsp;address</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>区域地址</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *address</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域地址</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/northDeflectionAngle" title="northDeflectionAngle"></a>
-	<h3 class="method-title"><code><a href="#//api/name/northDeflectionAngle">&nbsp;&nbsp;northDeflectionAngle</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>区域地图的偏北角</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *northDeflectionAngle</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域地图的偏北角</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
 			</div>
 			
 			
@@ -496,7 +370,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *telephone</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *telephone</code></div>
 
 		    
 			
@@ -519,329 +393,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/longitude" title="longitude"></a>
-	<h3 class="method-title"><code><a href="#//api/name/longitude">&nbsp;&nbsp;longitude</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>区域所在位置经度</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *longitude</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域所在位置经度</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/latitude" title="latitude"></a>
-	<h3 class="method-title"><code><a href="#//api/name/latitude">&nbsp;&nbsp;latitude</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>区域所在位置的纬度</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *latitude</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域所在位置的纬度</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/status" title="status"></a>
-	<h3 class="method-title"><code><a href="#//api/name/status">&nbsp;&nbsp;status</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>区域状态</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *status</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域状态</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/recordTime" title="recordTime"></a>
-	<h3 class="method-title"><code><a href="#//api/name/recordTime">&nbsp;&nbsp;recordTime</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>区域数据记录时间</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *recordTime</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域数据记录时间</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/recordUser" title="recordUser"></a>
-	<h3 class="method-title"><code><a href="#//api/name/recordUser">&nbsp;&nbsp;recordUser</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>区域数据记录人</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *recordUser</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域数据记录人</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/checkStatus" title="checkStatus"></a>
-	<h3 class="method-title"><code><a href="#//api/name/checkStatus">&nbsp;&nbsp;checkStatus</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>区域数据监测状态</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *checkStatus</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域数据监测状态</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/collectStatus" title="collectStatus"></a>
-	<h3 class="method-title"><code><a href="#//api/name/collectStatus">&nbsp;&nbsp;collectStatus</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>区域数据采集状态</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *collectStatus</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域数据采集状态</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
 			</div>
 			
 			
@@ -859,58 +411,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>区域默认显示楼层</p>
+				<p>默认显示楼层id</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *defaultFloorId</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域默认显示楼层</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/floorList" title="floorList"></a>
-	<h3 class="method-title"><code><a href="#//api/name/floorList">&nbsp;&nbsp;floorList</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>区域中楼层数据</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *floorList</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *defaultFloorId</code></div>
 
 		    
 			
@@ -922,7 +428,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域中楼层数据</p>
+				<p>默认显示楼层id</p>
 			</div>
 			
 
@@ -933,53 +439,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/packingFee" title="packingFee"></a>
-	<h3 class="method-title"><code><a href="#//api/name/packingFee">&nbsp;&nbsp;packingFee</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>停车费用</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *packingFee</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>停车费用</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
 			</div>
 			
 			
@@ -997,58 +457,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>区域停车场类型</p>
+				<p>停车场类型</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *packingType</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域停车场类型</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/totalPackSize" title="totalPackSize"></a>
-	<h3 class="method-title"><code><a href="#//api/name/totalPackSize">&nbsp;&nbsp;totalPackSize</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>停车场车位总数</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *totalPackSize</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *packingType</code></div>
 
 		    
 			
@@ -1060,7 +474,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>停车场车位总数</p>
+				<p>停车场类型</p>
 			</div>
 			
 
@@ -1071,53 +485,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/workTimes" title="workTimes"></a>
-	<h3 class="method-title"><code><a href="#//api/name/workTimes">&nbsp;&nbsp;workTimes</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>工作时间</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *workTimes</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>工作时间</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
 			</div>
 			
 			
@@ -1140,7 +508,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *beaconUUID</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *beaconUUID</code></div>
 
 		    
 			
@@ -1163,7 +531,743 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/workTimes" title="workTimes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/workTimes">&nbsp;&nbsp;workTimes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>工作时间</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *workTimes</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>工作时间</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/floorList" title="floorList"></a>
+	<h3 class="method-title"><code><a href="#//api/name/floorList">&nbsp;&nbsp;floorList</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>楼层列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *floorList</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>楼层列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/latitude" title="latitude"></a>
+	<h3 class="method-title"><code><a href="#//api/name/latitude">&nbsp;&nbsp;latitude</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>纬度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *latitude</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>纬度</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/floorPassList" title="floorPassList"></a>
+	<h3 class="method-title"><code><a href="#//api/name/floorPassList">&nbsp;&nbsp;floorPassList</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>楼层连通列表</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *floorPassList</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>楼层连通列表</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/regionType" title="regionType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/regionType">&nbsp;&nbsp;regionType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>区域类型</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *regionType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>区域类型</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/name" title="name"></a>
+	<h3 class="method-title"><code><a href="#//api/name/name">&nbsp;&nbsp;name</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>名称</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *name</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>名称</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/packingFee" title="packingFee"></a>
+	<h3 class="method-title"><code><a href="#//api/name/packingFee">&nbsp;&nbsp;packingFee</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停车费用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *packingFee</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>停车费用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/northDeflectionAngle" title="northDeflectionAngle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/northDeflectionAngle">&nbsp;&nbsp;northDeflectionAngle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>地图偏北角</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *northDeflectionAngle</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>地图偏北角</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/Id" title="Id"></a>
+	<h3 class="method-title"><code><a href="#//api/name/Id">&nbsp;&nbsp;Id</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>RegionId</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *Id</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>RegionId</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cityId" title="cityId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cityId">&nbsp;&nbsp;cityId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>城市<a href="#//api/name/Id">Id</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *cityId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>城市<a href="#//api/name/Id">Id</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/longitude" title="longitude"></a>
+	<h3 class="method-title"><code><a href="#//api/name/longitude">&nbsp;&nbsp;longitude</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>经度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *longitude</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>经度</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recordTime" title="recordTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recordTime">&nbsp;&nbsp;recordTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>记录时间</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *recordTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>记录时间</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recordUser" title="recordUser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recordUser">&nbsp;&nbsp;recordUser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>记录人</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *recordUser</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>记录人</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkStatus" title="checkStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkStatus">&nbsp;&nbsp;checkStatus</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>测试状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *checkStatus</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>测试状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/address" title="address"></a>
+	<h3 class="method-title"><code><a href="#//api/name/address">&nbsp;&nbsp;address</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>地址</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *address</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>地址</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/totalPackSize" title="totalPackSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/totalPackSize">&nbsp;&nbsp;totalPackSize</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停车位总数</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *totalPackSize</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>停车位总数</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
 			</div>
 			
 			
@@ -1186,7 +1290,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *advertList</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *advertList</code></div>
 
 		    
 			
@@ -1209,15 +1313,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/modifyTime" title="modifyTime"></a>
-	<h3 class="method-title"><code><a href="#//api/name/modifyTime">&nbsp;&nbsp;modifyTime</a></code>
+	<a name="//api/name/containFloor:" title="containFloor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/containFloor:">&ndash;&nbsp;containFloor:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -1227,16 +1331,33 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>数据最新更新时间</p>
+				<p>是否包含楼层</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *modifyTime</code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)containFloor:(YFFloor *)<em>floor</em></code></div>
 
 		    
 			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>floor</code></th>
+						<td><p>FLoor</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>（YES包含、NO不包含）</p>
+			</div>
 			
 
 			
@@ -1244,7 +1365,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>数据最新更新时间</p>
+				<p>是否包含楼层</p>
 			</div>
 			
 
@@ -1255,7 +1376,133 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFRegion.h</code></p>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUnitsWithFloor:" title="getUnitsWithFloor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUnitsWithFloor:">&ndash;&nbsp;getUnitsWithFloor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据楼层获取楼层的Units</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getUnitsWithFloor:(YFFloor *)<em>floor</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>floor</code></th>
+						<td><p>楼层</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Unit数组</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据楼层获取楼层的Units</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/findPathByFloor:" title="findPathByFloor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/findPathByFloor:">&ndash;&nbsp;findPathByFloor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据Floor获取路线数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (YFPath *)findPathByFloor:(NSString *)<em>floorId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>floorId</code></th>
+						<td><p>楼层<a href="#//api/name/Id">Id</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>路线数据</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据Floor获取路线数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFRegionData.h</code></p>
 			</div>
 			
 			

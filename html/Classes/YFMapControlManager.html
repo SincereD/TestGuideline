@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>YFFloor Class Reference</title>
+	<title>YFMapControlManager Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -56,31 +56,27 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/Id">Id</option>
+		<option value="//api/name/ancroPoint">ancroPoint</option>
 		
-		<option value="//api/name/collectLineList">collectLineList</option>
+		<option value="//api/name/currentSize">currentSize</option>
 		
-		<option value="//api/name/collectModifyTime">collectModifyTime</option>
+		<option value="//api/name/delegate">delegate</option>
 		
-		<option value="//api/name/mapModifyTime">mapModifyTime</option>
+		<option value="//api/name/mapCenterPoint">mapCenterPoint</option>
 		
-		<option value="//api/name/mapUrl">mapUrl</option>
+		<option value="//api/name/mapOrigionCenterPoint">mapOrigionCenterPoint</option>
 		
-		<option value="//api/name/modifyTime">modifyTime</option>
+		<option value="//api/name/northAngle">northAngle</option>
 		
-		<option value="//api/name/path">path</option>
+		<option value="//api/name/origionalSize">origionalSize</option>
 		
-		<option value="//api/name/quyuList">quyuList</option>
+		<option value="//api/name/panedX">panedX</option>
 		
-		<option value="//api/name/recordTime">recordTime</option>
+		<option value="//api/name/panedY">panedY</option>
 		
-		<option value="//api/name/regionId">regionId</option>
+		<option value="//api/name/pinchScale">pinchScale</option>
 		
-		<option value="//api/name/title">title</option>
-		
-		<option value="//api/name/unitList">unitList</option>
-		
-		<option value="//api/name/unitModifyTime">unitModifyTime</option>
+		<option value="//api/name/scale">scale</option>
 		
 	</optgroup>
 	
@@ -90,9 +86,9 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/checkCacheDataWithRegion:">- checkCacheDataWithRegion:</option>
+		<option value="//api/name/regulateMapWithLocationPosition:map:">- regulateMapWithLocationPosition:map:</option>
 		
-		<option value="//api/name/equalFloor:">- equalFloor:</option>
+		<option value="//api/name/regulateMapWithPosition:map:">- regulateMapWithPosition:map:</option>
 		
 	</optgroup>
 	
@@ -109,7 +105,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">YFFloor Class Reference</h1>
+					<h1 class="title">YFMapControlManager Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -118,7 +114,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>YFFloor.h<br />YFFloor.m</td>
+	<td>YFMapControlManager.h<br />YFMapControlManager.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -128,7 +124,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>楼层数据</p>
+						<p>地图位置控制器</p>
 					</div>
 					
 					
@@ -144,8 +140,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/Id" title="Id"></a>
-	<h3 class="method-title"><code><a href="#//api/name/Id">&nbsp;&nbsp;Id</a></code>
+	<a name="//api/name/regulateMapWithPosition:map:" title="regulateMapWithPosition:map:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/regulateMapWithPosition:map:">&ndash;&nbsp;regulateMapWithPosition:map:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -155,12 +151,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>id</p>
+				<p>p的 x y 的值，是地图原始比例的 x y</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *Id</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)regulateMapWithPosition:(YFPosition *)<em>p</em> map:(UIView *)<em>mapView</em></code></div>
 
 		    
 			
@@ -172,7 +168,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>id</p>
+				<p>p的 x y 的值，是地图原始比例的 x y</p>
 			</div>
 			
 
@@ -183,15 +179,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/regionId" title="regionId"></a>
-	<h3 class="method-title"><code><a href="#//api/name/regionId">&nbsp;&nbsp;regionId</a></code>
+	<a name="//api/name/regulateMapWithLocationPosition:map:" title="regulateMapWithLocationPosition:map:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/regulateMapWithLocationPosition:map:">&ndash;&nbsp;regulateMapWithLocationPosition:map:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -201,12 +197,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>region<a href="#//api/name/Id">Id</a></p>
+				<p>实时调整地图位置</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *regionId</code></div>
+			<div class="method-subsection method-declaration"><code>- (void)regulateMapWithLocationPosition:(YFPosition *)<em>p</em> map:(UIView *)<em>mapView</em></code></div>
 
 		    
 			
@@ -218,7 +214,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>region<a href="#//api/name/Id">Id</a></p>
+				<p>实时调整地图位置</p>
 			</div>
 			
 
@@ -229,15 +225,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/title" title="title"></a>
-	<h3 class="method-title"><code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+	<a name="//api/name/scale" title="scale"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scale">&nbsp;&nbsp;scale</a></code>
 </h3>
 
 	<div class="method-info">
@@ -247,12 +243,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>名称</p>
+				<p>地图的缩放比例 -> 在地图初始化的时候已设置完成</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *title</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat scale</code></div>
 
 		    
 			
@@ -264,7 +260,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>名称</p>
+				<p>地图的缩放比例 -> 在地图初始化的时候已设置完成</p>
 			</div>
 			
 
@@ -275,15 +271,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/mapUrl" title="mapUrl"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapUrl">&nbsp;&nbsp;mapUrl</a></code>
+	<a name="//api/name/pinchScale" title="pinchScale"></a>
+	<h3 class="method-title"><code><a href="#//api/name/pinchScale">&nbsp;&nbsp;pinchScale</a></code>
 </h3>
 
 	<div class="method-info">
@@ -293,12 +289,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>地图URL</p>
+				<p>地图的手势缩放比例</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *mapUrl</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat pinchScale</code></div>
 
 		    
 			
@@ -310,7 +306,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>地图URL</p>
+				<p>地图的手势缩放比例</p>
 			</div>
 			
 
@@ -321,15 +317,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/recordTime" title="recordTime"></a>
-	<h3 class="method-title"><code><a href="#//api/name/recordTime">&nbsp;&nbsp;recordTime</a></code>
+	<a name="//api/name/ancroPoint" title="ancroPoint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ancroPoint">&nbsp;&nbsp;ancroPoint</a></code>
 </h3>
 
 	<div class="method-info">
@@ -339,12 +335,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>记录时间</p>
+				<p>地图的锚点</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *recordTime</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint ancroPoint</code></div>
 
 		    
 			
@@ -356,7 +352,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>记录时间</p>
+				<p>地图的锚点</p>
 			</div>
 			
 
@@ -367,15 +363,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/modifyTime" title="modifyTime"></a>
-	<h3 class="method-title"><code><a href="#//api/name/modifyTime">&nbsp;&nbsp;modifyTime</a></code>
+	<a name="//api/name/origionalSize" title="origionalSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/origionalSize">&nbsp;&nbsp;origionalSize</a></code>
 </h3>
 
 	<div class="method-info">
@@ -385,12 +381,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>最后更新时间</p>
+				<p>地图的原始尺寸</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *modifyTime</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGSize origionalSize</code></div>
 
 		    
 			
@@ -402,7 +398,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>最后更新时间</p>
+				<p>地图的原始尺寸</p>
 			</div>
 			
 
@@ -413,15 +409,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/collectLineList" title="collectLineList"></a>
-	<h3 class="method-title"><code><a href="#//api/name/collectLineList">&nbsp;&nbsp;collectLineList</a></code>
+	<a name="//api/name/currentSize" title="currentSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/currentSize">&nbsp;&nbsp;currentSize</a></code>
 </h3>
 
 	<div class="method-info">
@@ -431,12 +427,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>采集线集合</p>
+				<p>地图经过放缩后的尺寸</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *collectLineList</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGSize currentSize</code></div>
 
 		    
 			
@@ -448,7 +444,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>采集线集合</p>
+				<p>地图经过放缩后的尺寸</p>
 			</div>
 			
 
@@ -459,15 +455,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/unitModifyTime" title="unitModifyTime"></a>
-	<h3 class="method-title"><code><a href="#//api/name/unitModifyTime">&nbsp;&nbsp;unitModifyTime</a></code>
+	<a name="//api/name/mapOrigionCenterPoint" title="mapOrigionCenterPoint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mapOrigionCenterPoint">&nbsp;&nbsp;mapOrigionCenterPoint</a></code>
 </h3>
 
 	<div class="method-info">
@@ -477,12 +473,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>unit最后编辑时间</p>
+				<p>地图的初始中心点</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *unitModifyTime</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint mapOrigionCenterPoint</code></div>
 
 		    
 			
@@ -494,7 +490,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>unit最后编辑时间</p>
+				<p>地图的初始中心点</p>
 			</div>
 			
 
@@ -505,15 +501,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/collectModifyTime" title="collectModifyTime"></a>
-	<h3 class="method-title"><code><a href="#//api/name/collectModifyTime">&nbsp;&nbsp;collectModifyTime</a></code>
+	<a name="//api/name/mapCenterPoint" title="mapCenterPoint"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mapCenterPoint">&nbsp;&nbsp;mapCenterPoint</a></code>
 </h3>
 
 	<div class="method-info">
@@ -523,12 +519,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>采集数据更新时间</p>
+				<p>地图的中心点 在父视图的 位置</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *collectModifyTime</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint mapCenterPoint</code></div>
 
 		    
 			
@@ -540,7 +536,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>采集数据更新时间</p>
+				<p>地图的中心点 在父视图的 位置</p>
 			</div>
 			
 
@@ -551,15 +547,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/mapModifyTime" title="mapModifyTime"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapModifyTime">&nbsp;&nbsp;mapModifyTime</a></code>
+	<a name="//api/name/panedX" title="panedX"></a>
+	<h3 class="method-title"><code><a href="#//api/name/panedX">&nbsp;&nbsp;panedX</a></code>
 </h3>
 
 	<div class="method-info">
@@ -569,12 +565,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>地图更新时间</p>
+				<p>地图手势拖移的X分量</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *mapModifyTime</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat panedX</code></div>
 
 		    
 			
@@ -586,7 +582,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>地图更新时间</p>
+				<p>地图手势拖移的X分量</p>
 			</div>
 			
 
@@ -597,15 +593,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/unitList" title="unitList"></a>
-	<h3 class="method-title"><code><a href="#//api/name/unitList">&nbsp;&nbsp;unitList</a></code>
+	<a name="//api/name/panedY" title="panedY"></a>
+	<h3 class="method-title"><code><a href="#//api/name/panedY">&nbsp;&nbsp;panedY</a></code>
 </h3>
 
 	<div class="method-info">
@@ -615,12 +611,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>unit集合</p>
+				<p>地图手势拖移的Y分量</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *unitList</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat panedY</code></div>
 
 		    
 			
@@ -632,7 +628,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>unit集合</p>
+				<p>地图手势拖移的Y分量</p>
 			</div>
 			
 
@@ -643,15 +639,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/quyuList" title="quyuList"></a>
-	<h3 class="method-title"><code><a href="#//api/name/quyuList">&nbsp;&nbsp;quyuList</a></code>
+	<a name="//api/name/northAngle" title="northAngle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/northAngle">&nbsp;&nbsp;northAngle</a></code>
 </h3>
 
 	<div class="method-info">
@@ -661,12 +657,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>区域集合</p>
+				<p>地图偏北角</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSArray *quyuList</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat northAngle</code></div>
 
 		    
 			
@@ -678,7 +674,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>区域集合</p>
+				<p>地图偏北角</p>
 			</div>
 			
 
@@ -689,15 +685,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/path" title="path"></a>
-	<h3 class="method-title"><code><a href="#//api/name/path">&nbsp;&nbsp;path</a></code>
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
 </h3>
 
 	<div class="method-info">
@@ -707,12 +703,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>楼层路线数据</p>
+				<p><a href="../Protocols/YFMapControlDelegate.html">YFMapControlDelegate</a></p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) YFPath *path</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;YFMapControlDelegate&gt; delegate</code></div>
 
 		    
 			
@@ -724,7 +720,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>楼层路线数据</p>
+				<p><a href="../Protocols/YFMapControlDelegate.html">YFMapControlDelegate</a></p>
 			</div>
 			
 
@@ -735,116 +731,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/checkCacheDataWithRegion:" title="checkCacheDataWithRegion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/checkCacheDataWithRegion:">&ndash;&nbsp;checkCacheDataWithRegion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>该方法已弃用</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)checkCacheDataWithRegion:(YFRegion *)<em>region</em></code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>该方法已弃用</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/equalFloor:" title="equalFloor:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/equalFloor:">&ndash;&nbsp;equalFloor:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>判断楼层是否一致</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)equalFloor:(YFFloor *)<em>floor</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>floor</code></th>
-						<td><p>Floor</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>（YES一致、NO不一致）</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>判断楼层是否一致</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFFloor.h</code></p>
+				<p><code class="declared-in-ref">YFMapControlManager.h</code></p>
 			</div>
 			
 			

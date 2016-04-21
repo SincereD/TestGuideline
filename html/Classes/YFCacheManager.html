@@ -72,6 +72,10 @@
 		
 		<option value="//api/name/createUnitFolderWith:floor:">- createUnitFolderWith:floor:</option>
 		
+		<option value="//api/name/loadAllRegions">- loadAllRegions</option>
+		
+		<option value="//api/name/saveAllRegions:">- saveAllRegions:</option>
+		
 	</optgroup>
 	
 	
@@ -188,9 +192,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>创建区域缓存文件夹.
-文件夹名为aRegion.name_aRegion.id.
-@param aRegion.</p>
+				<p>创建区域缓存文件夹、文件夹名为aRegion.name_aRegion.id</p>
 			</div>
 			
 		    
@@ -198,6 +200,18 @@
 			<div class="method-subsection method-declaration"><code>- (void)createRegionFolderWith:(YFRegion *)<em>aRegion</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegion</code></th>
+						<td><p><a href="../Classes/YFRegion.html">YFRegion</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -207,9 +221,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>创建区域缓存文件夹.
-文件夹名为aRegion.name_aRegion.id.
-@param aRegion.</p>
+				<p>创建区域缓存文件夹、文件夹名为aRegion.name_aRegion.id</p>
 			</div>
 			
 
@@ -238,10 +250,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>在区域文件夹下创建楼层缓存文件夹
-文件夹名为aFloor.name_aFloor.id
-@param aRegion
-@param aFloor</p>
+				<p>在区域文件夹下创建楼层缓存文件夹、文件夹名为aFloor.name_aFloor.id</p>
 			</div>
 			
 		    
@@ -258,9 +267,9 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>在区域文件夹下创建楼层缓存文件夹
-文件夹名为aFloor.name_aFloor.id
-@param aRegion
+				<p>在区域文件夹下创建楼层缓存文件夹、文件夹名为aFloor.name_aFloor.id</p>
+
+<p>@param aRegion
 @param aFloor</p>
 			</div>
 			
@@ -290,10 +299,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>在楼层文件夹下创建地图缓存文件夹
-文件夹名为Map
-@param aRegion
-@param aFloor</p>
+				<p>在楼层文件夹下创建地图缓存文件夹、文件夹名为Map</p>
 			</div>
 			
 		    
@@ -301,6 +307,23 @@
 			<div class="method-subsection method-declaration"><code>- (void)createMapFolderWith:(YFRegion *)<em>aRegion</em> floor:(YFFloor *)<em>aFloor</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aRegion</code></th>
+						<td><p><a href="../Classes/YFRegion.html">YFRegion</a></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>aFloor</code></th>
+						<td><p><a href="../Classes/YFFloor.html">YFFloor</a></p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -310,10 +333,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>在楼层文件夹下创建地图缓存文件夹
-文件夹名为Map
-@param aRegion
-@param aFloor</p>
+				<p>在楼层文件夹下创建地图缓存文件夹、文件夹名为Map</p>
 			</div>
 			
 
@@ -342,10 +362,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>在楼层文件夹下创建单元缓存文件夹
-文件夹名为Unit
-@param aRegion
-@param aFloor</p>
+				<p>在楼层文件夹下创建单元缓存文件夹、文件夹名为Unit</p>
 			</div>
 			
 		    
@@ -362,9 +379,9 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>在楼层文件夹下创建单元缓存文件夹
-文件夹名为Unit
-@param aRegion
+				<p>在楼层文件夹下创建单元缓存文件夹、文件夹名为Unit</p>
+
+<p>@param aRegion
 @param aFloor</p>
 			</div>
 			
@@ -443,10 +460,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>在楼层文件夹下创建路径缓存文件夹
-文件夹名为<a href="../Classes/Path.html">Path</a>
-@param aRegion
-@param aFloor</p>
+				<p>在楼层文件夹下创建路径缓存文件夹、文件夹名为Path</p>
 			</div>
 			
 		    
@@ -463,10 +477,109 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>在楼层文件夹下创建路径缓存文件夹
-文件夹名为<a href="../Classes/Path.html">Path</a>
-@param aRegion
+				<p>在楼层文件夹下创建路径缓存文件夹、文件夹名为Path</p>
+
+<p>@param aRegion
 @param aFloor</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFCacheManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveAllRegions:" title="saveAllRegions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveAllRegions:">&ndash;&nbsp;saveAllRegions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>缓存所有的region信息、文件夹名为Path</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveAllRegions:(NSArray *)<em>allregions</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>缓存所有的region信息、文件夹名为Path</p>
+
+<p>@param allregions</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFCacheManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadAllRegions" title="loadAllRegions"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadAllRegions">&ndash;&nbsp;loadAllRegions</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>加载缓存的regions信息</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)loadAllRegions</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>之前缓存的数据</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>加载缓存的regions信息</p>
 			</div>
 			
 

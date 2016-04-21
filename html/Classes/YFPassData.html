@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>YFBeaconManager Class Reference</title>
+	<title>YFPassData Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -56,7 +56,7 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/delegate">delegate</option>
+		<option value="//api/name/passGroup">passGroup</option>
 		
 	</optgroup>
 	
@@ -66,11 +66,11 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/autoMarkCarLocation">- autoMarkCarLocation</option>
+		<option value="//api/name/getAllValidPassgroups:endFloor:">- getAllValidPassgroups:endFloor:</option>
 		
-		<option value="//api/name/startRangingBeaconsIsInDoor">- startRangingBeaconsIsInDoor</option>
+		<option value="//api/name/getTargetUnitWithFloorId:">- getTargetUnitWithFloorId:</option>
 		
-		<option value="//api/name/startScaningBeaconsInRegion">- startScaningBeaconsInRegion</option>
+		<option value="//api/name/needPassData">- needPassData</option>
 		
 	</optgroup>
 	
@@ -87,7 +87,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">YFBeaconManager Class Reference</h1>
+					<h1 class="title">YFPassData Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -96,7 +96,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>YFBeaconManager.h<br />YFBeaconManager.m</td>
+	<td>YFPassData.h<br />YFPassData.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -106,7 +106,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>获取蓝牙的类</p>
+						<p>连通性数据</p>
 					</div>
 					
 					
@@ -122,8 +122,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/delegate" title="delegate"></a>
-	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	<a name="//api/name/needPassData" title="needPassData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/needPassData">&ndash;&nbsp;needPassData</a></code>
 </h3>
 
 	<div class="method-info">
@@ -133,16 +133,21 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>蓝牙回调</p>
+				<p>检测是否需要连通性数据</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;YFBeaconProtocol&gt; delegate</code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)needPassData</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>（YES需要、NO不需要）</p>
+			</div>
 			
 
 			
@@ -150,7 +155,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>蓝牙回调</p>
+				<p>检测是否需要连通性数据</p>
 			</div>
 			
 
@@ -161,15 +166,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
+				<p><code class="declared-in-ref">YFPassData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/startScaningBeaconsInRegion" title="startScaningBeaconsInRegion"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startScaningBeaconsInRegion">&ndash;&nbsp;startScaningBeaconsInRegion</a></code>
+	<a name="//api/name/getTargetUnitWithFloorId:" title="getTargetUnitWithFloorId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTargetUnitWithFloorId:">&ndash;&nbsp;getTargetUnitWithFloorId:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -179,16 +184,33 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>在进入无蓝牙区域的时候开启扫描任务，再次进入蓝牙区域的时候重新进行定位</p>
+				<p>获取对应楼层Id的Unit数据</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)startScaningBeaconsInRegion</code></div>
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getTargetUnitWithFloorId:(NSString *)<em>floorId</em></code></div>
 
 		    
 			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>floorId</code></th>
+						<td><p>楼层Id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>目标数组</p>
+			</div>
 			
 
 			
@@ -196,7 +218,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>在进入无蓝牙区域的时候开启扫描任务，再次进入蓝牙区域的时候重新进行定位</p>
+				<p>获取对应楼层Id的Unit数据</p>
 			</div>
 			
 
@@ -207,15 +229,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
+				<p><code class="declared-in-ref">YFPassData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/startRangingBeaconsIsInDoor" title="startRangingBeaconsIsInDoor"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startRangingBeaconsIsInDoor">&ndash;&nbsp;startRangingBeaconsIsInDoor</a></code>
+	<a name="//api/name/getAllValidPassgroups:endFloor:" title="getAllValidPassgroups:endFloor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllValidPassgroups:endFloor:">&ndash;&nbsp;getAllValidPassgroups:endFloor:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -225,16 +247,38 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>判断蓝牙是不是在停车场内</p>
+				<p>根据起点和终点楼层Id获取连通性数据</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)startRangingBeaconsIsInDoor</code></div>
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;NSArray*&gt; *)getAllValidPassgroups:(NSString *)<em>startFloorId</em> endFloor:(NSString *)<em>endFloorId</em></code></div>
 
 		    
 			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>startFloorId</code></th>
+						<td><p>起点楼层Id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>endFloorId</code></th>
+						<td><p>终点楼层Id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>连通性数据</p>
+			</div>
 			
 
 			
@@ -242,7 +286,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>判断蓝牙是不是在停车场内</p>
+				<p>根据起点和终点楼层Id获取连通性数据</p>
 			</div>
 			
 
@@ -253,15 +297,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
+				<p><code class="declared-in-ref">YFPassData.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/autoMarkCarLocation" title="autoMarkCarLocation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/autoMarkCarLocation">&ndash;&nbsp;autoMarkCarLocation</a></code>
+	<a name="//api/name/passGroup" title="passGroup"></a>
+	<h3 class="method-title"><code><a href="#//api/name/passGroup">&nbsp;&nbsp;passGroup</a></code>
 </h3>
 
 	<div class="method-info">
@@ -271,12 +315,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>自动标记车的位置</p>
+				<p>数据集合</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)autoMarkCarLocation</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *passGroup</code></div>
 
 		    
 			
@@ -288,7 +332,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>自动标记车的位置</p>
+				<p>数据集合</p>
 			</div>
 			
 
@@ -299,7 +343,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
+				<p><code class="declared-in-ref">YFPassData.h</code></p>
 			</div>
 			
 			

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>YFGeneralManager Class Reference</title>
+	<title>YFPassUnit Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -52,27 +52,29 @@
 
 	
 	
-
-	
-	<optgroup label="Class Methods">
+	<optgroup label="Properties">
 		
-		<option value="//api/name/sharedManager">+ sharedManager</option>
+		<option value="//api/name/floorId">floorId</option>
+		
+		<option value="//api/name/floorName">floorName</option>
+		
+		<option value="//api/name/unitId">unitId</option>
+		
+		<option value="//api/name/unitTypeId">unitTypeId</option>
+		
+		<option value="//api/name/x">x</option>
+		
+		<option value="//api/name/y">y</option>
 		
 	</optgroup>
 	
 
 	
+
+	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/currentRegion">- currentRegion</option>
-		
-		<option value="//api/name/currentregions">- currentregions</option>
-		
-		<option value="//api/name/initSessionWithUserName:delegate:">- initSessionWithUserName:delegate:</option>
-		
-		<option value="//api/name/isLoginSuccess">- isLoginSuccess</option>
-		
-		<option value="//api/name/onLoadLocalRegionsData">- onLoadLocalRegionsData</option>
+		<option value="//api/name/equalFloorId:">- equalFloorId:</option>
 		
 	</optgroup>
 	
@@ -89,7 +91,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">YFGeneralManager Class Reference</h1>
+					<h1 class="title">YFPassUnit Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -98,7 +100,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>YFGeneralManager.h<br />YFGeneralManager.m</td>
+	<td>YFPassUnit.h<br />YFPassUnit.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -116,8 +118,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/sharedManager" title="sharedManager"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sharedManager">+&nbsp;sharedManager</a></code>
+	<a name="//api/name/equalFloorId:" title="equalFloorId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/equalFloorId:">&ndash;&nbsp;equalFloorId:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -127,63 +129,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>单例对象</p>
+				<p>判断楼层id是否相同</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (instancetype)sharedManager</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>instancetype</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>单例对象</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/initSessionWithUserName:delegate:" title="initSessionWithUserName:delegate:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initSessionWithUserName:delegate:">&ndash;&nbsp;initSessionWithUserName:delegate:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>初始化注册信息</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)initSessionWithUserName:(NSString *)<em>userName</em> delegate:(id)<em>delegate</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)equalFloorId:(NSString *)<em>floorId</em></code></div>
 
 		    
 			
@@ -192,13 +143,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>userName</code></th>
-						<td><p>用户名</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>delegate</code></th>
-						<td><p>回调对象</p></td>
+						<th scope="row" class="argument-name"><code>floorId</code></th>
+						<td><p><a href="#//api/name/floorId">floorId</a></p></td>
 					</tr>
 				
 				</table>
@@ -206,13 +152,18 @@
 			
 
 			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>（YES相同、NO不想同）</p>
+			</div>
+			
 
 			
 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>初始化注册信息</p>
+				<p>判断楼层id是否相同</p>
 			</div>
 			
 
@@ -223,15 +174,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
+				<p><code class="declared-in-ref">YFPassUnit.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/isLoginSuccess" title="isLoginSuccess"></a>
-	<h3 class="method-title"><code><a href="#//api/name/isLoginSuccess">&ndash;&nbsp;isLoginSuccess</a></code>
+	<a name="//api/name/floorId" title="floorId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/floorId">&nbsp;&nbsp;floorId</a></code>
 </h3>
 
 	<div class="method-info">
@@ -241,21 +192,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>检测是否登陆成功</p>
+				<p>floorId楼层Id</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL)isLoginSuccess</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *floorId</code></div>
 
 		    
 			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>（YES成功、NO失败）</p>
-			</div>
 			
 
 			
@@ -263,7 +209,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>检测是否登陆成功</p>
+				<p>floorId楼层Id</p>
 			</div>
 			
 
@@ -274,15 +220,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
+				<p><code class="declared-in-ref">YFPassUnit.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/currentRegion" title="currentRegion"></a>
-	<h3 class="method-title"><code><a href="#//api/name/currentRegion">&ndash;&nbsp;currentRegion</a></code>
+	<a name="//api/name/floorName" title="floorName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/floorName">&nbsp;&nbsp;floorName</a></code>
 </h3>
 
 	<div class="method-info">
@@ -292,21 +238,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取当前的Region</p>
+				<p>floorName楼层名称</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (YFRegion *)currentRegion</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *floorName</code></div>
 
 		    
 			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Region</p>
-			</div>
 			
 
 			
@@ -314,7 +255,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取当前的Region</p>
+				<p>floorName楼层名称</p>
 			</div>
 			
 
@@ -325,15 +266,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
+				<p><code class="declared-in-ref">YFPassUnit.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/currentregions" title="currentregions"></a>
-	<h3 class="method-title"><code><a href="#//api/name/currentregions">&ndash;&nbsp;currentregions</a></code>
+	<a name="//api/name/unitId" title="unitId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unitId">&nbsp;&nbsp;unitId</a></code>
 </h3>
 
 	<div class="method-info">
@@ -343,21 +284,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取当前注册信息下对应的Regions</p>
+				<p>unitId</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (NSArray *)currentregions</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *unitId</code></div>
 
 		    
 			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Region集合</p>
-			</div>
 			
 
 			
@@ -365,7 +301,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取当前注册信息下对应的Regions</p>
+				<p>unitId</p>
 			</div>
 			
 
@@ -376,15 +312,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
+				<p><code class="declared-in-ref">YFPassUnit.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/onLoadLocalRegionsData" title="onLoadLocalRegionsData"></a>
-	<h3 class="method-title"><code><a href="#//api/name/onLoadLocalRegionsData">&ndash;&nbsp;onLoadLocalRegionsData</a></code>
+	<a name="//api/name/unitTypeId" title="unitTypeId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unitTypeId">&nbsp;&nbsp;unitTypeId</a></code>
 </h3>
 
 	<div class="method-info">
@@ -394,21 +330,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>加载缓存all<a href="#//api/name/regions">regions</a></p>
+				<p>unitTypeId 类型标识</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL)onLoadLocalRegionsData</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *unitTypeId</code></div>
 
 		    
 			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>(YES加载成功、NO加载失败)</p>
-			</div>
 			
 
 			
@@ -416,7 +347,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>加载缓存all<a href="#//api/name/regions">regions</a></p>
+				<p>unitTypeId 类型标识</p>
 			</div>
 			
 
@@ -427,7 +358,99 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFGeneralManager.h</code></p>
+				<p><code class="declared-in-ref">YFPassUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/x" title="x"></a>
+	<h3 class="method-title"><code><a href="#//api/name/x">&nbsp;&nbsp;x</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>x坐标</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *x</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>x坐标</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFPassUnit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/y" title="y"></a>
+	<h3 class="method-title"><code><a href="#//api/name/y">&nbsp;&nbsp;y</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>y坐标</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *y</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>y坐标</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFPassUnit.h</code></p>
 			</div>
 			
 			

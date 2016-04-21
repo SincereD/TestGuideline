@@ -1,0 +1,3087 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>YFMapView Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">YFSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">YellFun</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/CarState">CarState</option>
+		
+		<option value="//api/name/HeadingMode">HeadingMode</option>
+		
+		<option value="//api/name/HumanCarTap">HumanCarTap</option>
+		
+		<option value="//api/name/NavState">NavState</option>
+		
+		<option value="//api/name/PressEnable">PressEnable</option>
+		
+		<option value="//api/name/PressFunction">PressFunction</option>
+		
+		<option value="//api/name/staticNav">staticNav</option>
+		
+		<option value="//api/name/type">type</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/changeAncroPointToCurrentPosition">- changeAncroPointToCurrentPosition</option>
+		
+		<option value="//api/name/changeHeaingInFollowMode:">- changeHeaingInFollowMode:</option>
+		
+		<option value="//api/name/changeToFollowHeading">- changeToFollowHeading</option>
+		
+		<option value="//api/name/changeToNormalHeading">- changeToNormalHeading</option>
+		
+		<option value="//api/name/exchangeMapDataWithFloor:">- exchangeMapDataWithFloor:</option>
+		
+		<option value="//api/name/facilityAction">- facilityAction</option>
+		
+		<option value="//api/name/floorAction">- floorAction</option>
+		
+		<option value="//api/name/getLengthWithPositions:">- getLengthWithPositions:</option>
+		
+		<option value="//api/name/getMarkDate">- getMarkDate</option>
+		
+		<option value="//api/name/getMarkFloor">- getMarkFloor</option>
+		
+		<option value="//api/name/getMarkPosition">- getMarkPosition</option>
+		
+		<option value="//api/name/getTimeString">- getTimeString</option>
+		
+		<option value="//api/name/handleExchangeMapDataWithFloor:">- handleExchangeMapDataWithFloor:</option>
+		
+		<option value="//api/name/heatAction:">- heatAction:</option>
+		
+		<option value="//api/name/hideALLElement">- hideALLElement</option>
+		
+		<option value="//api/name/iconRegulateWithRotation:">- iconRegulateWithRotation:</option>
+		
+		<option value="//api/name/iconRegulateWithScale:">- iconRegulateWithScale:</option>
+		
+		<option value="//api/name/initMarkPosition">- initMarkPosition</option>
+		
+		<option value="//api/name/initNavActionView">- initNavActionView</option>
+		
+		<option value="//api/name/initNavBarView">- initNavBarView</option>
+		
+		<option value="//api/name/initNormalActionView">- initNormalActionView</option>
+		
+		<option value="//api/name/initWithNavState:WithStartFloor:targetFloor:isStatic:">- initWithNavState:WithStartFloor:targetFloor:isStatic:</option>
+		
+		<option value="//api/name/initWithNormalState:">- initWithNormalState:</option>
+		
+		<option value="//api/name/locateAction">- locateAction</option>
+		
+		<option value="//api/name/mapPressActionDidBegan">- mapPressActionDidBegan</option>
+		
+		<option value="//api/name/markCarPositionWithPosition:floorOfPosition:">- markCarPositionWithPosition:floorOfPosition:</option>
+		
+		<option value="//api/name/markPositionCheck">- markPositionCheck</option>
+		
+		<option value="//api/name/northAngle">- northAngle</option>
+		
+		<option value="//api/name/recordMarkPositionTime">- recordMarkPositionTime</option>
+		
+		<option value="//api/name/reloadTransform">- reloadTransform</option>
+		
+		<option value="//api/name/removeLocationPosition">- removeLocationPosition</option>
+		
+		<option value="//api/name/removeLocationPositionAndData">- removeLocationPositionAndData</option>
+		
+		<option value="//api/name/removeMarkPositionTime">- removeMarkPositionTime</option>
+		
+		<option value="//api/name/removeMarkedPosition">- removeMarkedPosition</option>
+		
+		<option value="//api/name/removeTempOverLay">- removeTempOverLay</option>
+		
+		<option value="//api/name/resetMap">- resetMap</option>
+		
+		<option value="//api/name/resetNorthAngle">- resetNorthAngle</option>
+		
+		<option value="//api/name/setAUserfulPositionWithPoint:">- setAUserfulPositionWithPoint:</option>
+		
+		<option value="//api/name/showAllElement">- showAllElement</option>
+		
+		<option value="//api/name/showBeaconOffAlert">- showBeaconOffAlert</option>
+		
+		<option value="//api/name/showCarWithPosition:">- showCarWithPosition:</option>
+		
+		<option value="//api/name/showEndPositionWithPositions:onfloor:">- showEndPositionWithPositions:onfloor:</option>
+		
+		<option value="//api/name/showFacilityPositionWithPosition:">- showFacilityPositionWithPosition:</option>
+		
+		<option value="//api/name/showLocationWithPosition:">- showLocationWithPosition:</option>
+		
+		<option value="//api/name/showMarkCarPositionWithPosition:onFloor:">- showMarkCarPositionWithPosition:onFloor:</option>
+		
+		<option value="//api/name/showPathWithStartPosition:endPosition:">- showPathWithStartPosition:endPosition:</option>
+		
+		<option value="//api/name/showPathWithStartPosition:endPositions:">- showPathWithStartPosition:endPositions:</option>
+		
+		<option value="//api/name/showStartPositionWithPositions:onfloor:">- showStartPositionWithPositions:onfloor:</option>
+		
+		<option value="//api/name/simplyChangeHeading:">- simplyChangeHeading:</option>
+		
+		<option value="//api/name/transformToMinScale">- transformToMinScale</option>
+		
+		<option value="//api/name/zoomInAction">- zoomInAction</option>
+		
+		<option value="//api/name/zoomOutAction">- zoomOutAction</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">YFMapView Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>UIView</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/YFDataProtocol.html">YFDataProtocol</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>YFMapView.h<br />YFMapView.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>地图上icon（起点终点等）</p>
+
+<p>关于标记车位的操作</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithNormalState:" title="initWithNormalState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithNormalState:">&ndash;&nbsp;initWithNormalState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化YFMapView</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithNormalState:(BOOL)<em>navState</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化YFMapView</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithNavState:WithStartFloor:targetFloor:isStatic:" title="initWithNavState:WithStartFloor:targetFloor:isStatic:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithNavState:WithStartFloor:targetFloor:isStatic:">&ndash;&nbsp;initWithNavState:WithStartFloor:targetFloor:isStatic:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化YFMapView</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithNavState:(BOOL)<em>navState</em> WithStartFloor:(YFFloor *)<em>startFloor</em> targetFloor:(YFFloor *)<em>targetFloor</em> isStatic:(BOOL)<em>MapState</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化YFMapView</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/exchangeMapDataWithFloor:" title="exchangeMapDataWithFloor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exchangeMapDataWithFloor:">&ndash;&nbsp;exchangeMapDataWithFloor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>切换楼层</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)exchangeMapDataWithFloor:(YFFloor *)<em>floor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>切换楼层</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleExchangeMapDataWithFloor:" title="handleExchangeMapDataWithFloor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleExchangeMapDataWithFloor:">&ndash;&nbsp;handleExchangeMapDataWithFloor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>手动切换楼层</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)handleExchangeMapDataWithFloor:(YFFloor *)<em>floor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>手动切换楼层</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transformToMinScale" title="transformToMinScale"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transformToMinScale">&ndash;&nbsp;transformToMinScale</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在多点标记时，显示最小比例</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)transformToMinScale</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在多点标记时，显示最小比例</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetMap" title="resetMap"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetMap">&ndash;&nbsp;resetMap</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>重置地图状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resetMap</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>重置地图状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeTempOverLay" title="removeTempOverLay"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeTempOverLay">&ndash;&nbsp;removeTempOverLay</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移除临时车位或者起点</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeTempOverLay</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>移除临时车位或者起点</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/HeadingMode" title="HeadingMode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/HeadingMode">&nbsp;&nbsp;HeadingMode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HeadingMode
+地图的旋转模式
+NO  默认状态
+YES 跟随状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (atomic, assign) BOOL HeadingMode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HeadingMode
+地图的旋转模式
+NO  默认状态
+YES 跟随状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/CarState" title="CarState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/CarState">&nbsp;&nbsp;CarState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>CarState:导航状态（公共设施导航、标记车位导航）
+NO  默认为标记车位导航
+YES 公共设施导航</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL CarState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>CarState:导航状态（公共设施导航、标记车位导航）
+NO  默认为标记车位导航
+YES 公共设施导航</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/HumanCarTap" title="HumanCarTap"></a>
+	<h3 class="method-title"><code><a href="#//api/name/HumanCarTap">&nbsp;&nbsp;HumanCarTap</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HumanCarTap:多点选择是区分标记车位与标记用户位置
+NO  默认为标记车位
+YES 标记用户位置</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL HumanCarTap</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>HumanCarTap:多点选择是区分标记车位与标记用户位置
+NO  默认为标记车位
+YES 标记用户位置</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/staticNav" title="staticNav"></a>
+	<h3 class="method-title"><code><a href="#//api/name/staticNav">&nbsp;&nbsp;staticNav</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>MapState:地图的状态（静态导航、动态导航）
+NO  默认为动态导航模式
+YES 静态导航模式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL staticNav</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>MapState:地图的状态（静态导航、动态导航）
+NO  默认为动态导航模式
+YES 静态导航模式</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/NavState" title="NavState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/NavState">&nbsp;&nbsp;NavState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>NavState:地图的导航状态（普通状态、导航状态）
+NO   默认为普通状态
+YES  导航状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL NavState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>NavState:地图的导航状态（普通状态、导航状态）
+NO   默认为普通状态
+YES  导航状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/PressFunction" title="PressFunction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/PressFunction">&nbsp;&nbsp;PressFunction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>PressFunction: 地图的手势标记状态
+NO   默认状态为长按标记车位状态
+YES  长按标记起点状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL PressFunction</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>PressFunction: 地图的手势标记状态
+NO   默认状态为长按标记车位状态
+YES  长按标记起点状态</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/PressEnable" title="PressEnable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/PressEnable">&nbsp;&nbsp;PressEnable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>&lt;#Description#></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL PressEnable</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>&lt;#Description#></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="method-title"><code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>&lt;#Description#></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) YFInputViewType type</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>&lt;#Description#></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="IconRegulate Methods" name="task_IconRegulate Methods"></a>
+						<h2 class="task-title">IconRegulate Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/iconRegulateWithScale:" title="iconRegulateWithScale:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/iconRegulateWithScale:">&ndash;&nbsp;iconRegulateWithScale:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据比例调整icon大小</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)iconRegulateWithScale:(CGFloat)<em>scale</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据比例调整icon大小</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+IconRegulate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/iconRegulateWithRotation:" title="iconRegulateWithRotation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/iconRegulateWithRotation:">&ndash;&nbsp;iconRegulateWithRotation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>根据角度调整icon大小</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)iconRegulateWithRotation:(CGFloat)<em>rotation</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>根据角度调整icon大小</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+IconRegulate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reloadTransform" title="reloadTransform"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reloadTransform">&ndash;&nbsp;reloadTransform</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>重置icon tansform</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)reloadTransform</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>重置icon tansform</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+IconRegulate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/changeToNormalHeading" title="changeToNormalHeading"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changeToNormalHeading">&ndash;&nbsp;changeToNormalHeading</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>切换至普通状态（定位、导航）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)changeToNormalHeading</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>切换至普通状态（定位、导航）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+IconRegulate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/changeToFollowHeading" title="changeToFollowHeading"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changeToFollowHeading">&ndash;&nbsp;changeToFollowHeading</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>切换至跟随状态（定位、导航）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)changeToFollowHeading</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>切换至跟随状态（定位、导航）</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+IconRegulate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/changeAncroPointToCurrentPosition" title="changeAncroPointToCurrentPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changeAncroPointToCurrentPosition">&ndash;&nbsp;changeAncroPointToCurrentPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>切换锚点至当前定位点</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)changeAncroPointToCurrentPosition</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>切换锚点至当前定位点</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+IconRegulate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/simplyChangeHeading:" title="simplyChangeHeading:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/simplyChangeHeading:">&ndash;&nbsp;simplyChangeHeading:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在普通状态下改变旋转角度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)simplyChangeHeading:(CLHeading *)<em>heading</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在普通状态下改变旋转角度</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+IconRegulate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/changeHeaingInFollowMode:" title="changeHeaingInFollowMode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/changeHeaingInFollowMode:">&ndash;&nbsp;changeHeaingInFollowMode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在跟随状态下改变旋转角度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)changeHeaingInFollowMode:(CLHeading *)<em>heading</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在跟随状态下改变旋转角度</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+IconRegulate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="ShowPosition Methods" name="task_ShowPosition Methods"></a>
+						<h2 class="task-title">ShowPosition Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/showLocationWithPosition:" title="showLocationWithPosition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showLocationWithPosition:">&ndash;&nbsp;showLocationWithPosition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示定位点</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showLocationWithPosition:(YFPosition *)<em>p</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示定位点</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeLocationPosition" title="removeLocationPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeLocationPosition">&ndash;&nbsp;removeLocationPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移除定位点</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeLocationPosition</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>移除定位点</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeLocationPositionAndData" title="removeLocationPositionAndData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeLocationPositionAndData">&ndash;&nbsp;removeLocationPositionAndData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移除定位点和定位数据</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeLocationPositionAndData</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>移除定位点和定位数据</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showCarWithPosition:" title="showCarWithPosition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showCarWithPosition:">&ndash;&nbsp;showCarWithPosition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示停车点</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showCarWithPosition:(YFPosition *)<em>p</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示停车点</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showStartPositionWithPositions:onfloor:" title="showStartPositionWithPositions:onfloor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showStartPositionWithPositions:onfloor:">&ndash;&nbsp;showStartPositionWithPositions:onfloor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示起点坐标</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showStartPositionWithPositions:(NSArray *)<em>positions</em> onfloor:(YFFloor *)<em>floor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示起点坐标</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showEndPositionWithPositions:onfloor:" title="showEndPositionWithPositions:onfloor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showEndPositionWithPositions:onfloor:">&ndash;&nbsp;showEndPositionWithPositions:onfloor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示终点（目的地）坐标</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showEndPositionWithPositions:(NSArray *)<em>positions</em> onfloor:(YFFloor *)<em>floor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示终点（目的地）坐标</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showFacilityPositionWithPosition:" title="showFacilityPositionWithPosition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showFacilityPositionWithPosition:">&ndash;&nbsp;showFacilityPositionWithPosition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示公共设施</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showFacilityPositionWithPosition:(YFPosition *)<em>p</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示公共设施</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showMarkCarPositionWithPosition:onFloor:" title="showMarkCarPositionWithPosition:onFloor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showMarkCarPositionWithPosition:onFloor:">&ndash;&nbsp;showMarkCarPositionWithPosition:onFloor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示对应楼层的车位标记</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showMarkCarPositionWithPosition:(YFPosition *)<em>p</em> onFloor:(YFFloor *)<em>floor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示对应楼层的车位标记</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showPathWithStartPosition:endPosition:" title="showPathWithStartPosition:endPosition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showPathWithStartPosition:endPosition:">&ndash;&nbsp;showPathWithStartPosition:endPosition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示路线</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showPathWithStartPosition:(YFPosition *)<em>sp</em> endPosition:(YFPosition *)<em>ep</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示路线</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showPathWithStartPosition:endPositions:" title="showPathWithStartPosition:endPositions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showPathWithStartPosition:endPositions:">&ndash;&nbsp;showPathWithStartPosition:endPositions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示多点最短路线</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showPathWithStartPosition:(YFPosition *)<em>sp</em> endPositions:(NSArray *)<em>endPositions</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示多点最短路线</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLengthWithPositions:" title="getLengthWithPositions:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLengthWithPositions:">&ndash;&nbsp;getLengthWithPositions:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>计算路线点长度</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CGFloat)getLengthWithPositions:(NSArray *)<em>positions</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>计算路线点长度</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initMarkPosition" title="initMarkPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initMarkPosition">&ndash;&nbsp;initMarkPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化楼层标记</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initMarkPosition</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化楼层标记</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+ShowPosition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="YFMapAction Methods" name="task_YFMapAction Methods"></a>
+						<h2 class="task-title">YFMapAction Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initNormalActionView" title="initNormalActionView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initNormalActionView">&ndash;&nbsp;initNormalActionView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化通用UI</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initNormalActionView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化通用UI</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initNavActionView" title="initNavActionView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initNavActionView">&ndash;&nbsp;initNavActionView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化导航UI</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initNavActionView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化导航UI</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/facilityAction" title="facilityAction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/facilityAction">&ndash;&nbsp;facilityAction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>公共设施</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)facilityAction</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>公共设施</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initNavBarView" title="initNavBarView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initNavBarView">&ndash;&nbsp;initNavBarView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>导航视图</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)initNavBarView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>导航视图</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/northAngle" title="northAngle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/northAngle">&ndash;&nbsp;northAngle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>北偏角</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)northAngle</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>北偏角</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetNorthAngle" title="resetNorthAngle"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetNorthAngle">&ndash;&nbsp;resetNorthAngle</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>公共设施</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resetNorthAngle</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>公共设施</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/locateAction" title="locateAction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/locateAction">&ndash;&nbsp;locateAction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>定位</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)locateAction</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>定位</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/heatAction:" title="heatAction:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/heatAction:">&ndash;&nbsp;heatAction:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>热力图</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)heatAction:(UIButton *)<em>sender</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>热力图</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/floorAction" title="floorAction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/floorAction">&ndash;&nbsp;floorAction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>楼层按钮</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)floorAction</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>楼层按钮</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/zoomInAction" title="zoomInAction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/zoomInAction">&ndash;&nbsp;zoomInAction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>放大</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)zoomInAction</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>放大</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/zoomOutAction" title="zoomOutAction"></a>
+	<h3 class="method-title"><code><a href="#//api/name/zoomOutAction">&ndash;&nbsp;zoomOutAction</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>缩小</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)zoomOutAction</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>缩小</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showAllElement" title="showAllElement"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showAllElement">&ndash;&nbsp;showAllElement</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示所有元素</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showAllElement</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示所有元素</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hideALLElement" title="hideALLElement"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hideALLElement">&ndash;&nbsp;hideALLElement</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>隐藏所有的元素</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)hideALLElement</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>隐藏所有的元素</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mapPressActionDidBegan" title="mapPressActionDidBegan"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mapPressActionDidBegan">&ndash;&nbsp;mapPressActionDidBegan</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>长按地图标记时调用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)mapPressActionDidBegan</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>长按地图标记时调用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showBeaconOffAlert" title="showBeaconOffAlert"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showBeaconOffAlert">&ndash;&nbsp;showBeaconOffAlert</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>显示蓝牙关闭提示</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)showBeaconOffAlert</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>显示蓝牙关闭提示</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="YFMapMarkAction Methods" name="task_YFMapMarkAction Methods"></a>
+						<h2 class="task-title">YFMapMarkAction Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/markCarPositionWithPosition:floorOfPosition:" title="markCarPositionWithPosition:floorOfPosition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/markCarPositionWithPosition:floorOfPosition:">&ndash;&nbsp;markCarPositionWithPosition:floorOfPosition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>标记车位</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)markCarPositionWithPosition:(YFPosition *)<em>p</em> floorOfPosition:(YFFloor *)<em>floor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>标记车位</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapMarkAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeMarkedPosition" title="removeMarkedPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeMarkedPosition">&ndash;&nbsp;removeMarkedPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移除车位标记</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeMarkedPosition</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>移除车位标记</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapMarkAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recordMarkPositionTime" title="recordMarkPositionTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recordMarkPositionTime">&ndash;&nbsp;recordMarkPositionTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>记录标记车位的时间</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)recordMarkPositionTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>记录标记车位的时间</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapMarkAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeMarkPositionTime" title="removeMarkPositionTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeMarkPositionTime">&ndash;&nbsp;removeMarkPositionTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移除标记车位的时间</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeMarkPositionTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>移除标记车位的时间</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapMarkAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/markPositionCheck" title="markPositionCheck"></a>
+	<h3 class="method-title"><code><a href="#//api/name/markPositionCheck">&ndash;&nbsp;markPositionCheck</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>检测是否已标记车位</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)markPositionCheck</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>检测是否已标记车位</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapMarkAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMarkPosition" title="getMarkPosition"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMarkPosition">&ndash;&nbsp;getMarkPosition</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取标记的车位</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (YFPosition *)getMarkPosition</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取标记的车位</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapMarkAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMarkFloor" title="getMarkFloor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMarkFloor">&ndash;&nbsp;getMarkFloor</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取标记的车位所属楼层</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (YFFloor *)getMarkFloor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取标记的车位所属楼层</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapMarkAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMarkDate" title="getMarkDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMarkDate">&ndash;&nbsp;getMarkDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取标记车位时间</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDate *)getMarkDate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取标记车位时间</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapMarkAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTimeString" title="getTimeString"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTimeString">&ndash;&nbsp;getTimeString</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取停车时长</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getTimeString</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取停车时长</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapMarkAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setAUserfulPositionWithPoint:" title="setAUserfulPositionWithPoint:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setAUserfulPositionWithPoint:">&ndash;&nbsp;setAUserfulPositionWithPoint:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>长按标记车位or设置当前位置</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setAUserfulPositionWithPoint:(CGPoint)<em>pressPoint</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>长按标记车位or设置当前位置</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFMapView+YFMapMarkAction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 YellFun. All rights reserved. Updated: 2016-04-21</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>YFBeaconManager Class Reference</title>
+	<title>YFLengthPre Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -56,7 +56,9 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/delegate">delegate</option>
+		<option value="//api/name/length">length</option>
+		
+		<option value="//api/name/preIndex">preIndex</option>
 		
 	</optgroup>
 	
@@ -66,11 +68,7 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/autoMarkCarLocation">- autoMarkCarLocation</option>
-		
-		<option value="//api/name/startRangingBeaconsIsInDoor">- startRangingBeaconsIsInDoor</option>
-		
-		<option value="//api/name/startScaningBeaconsInRegion">- startScaningBeaconsInRegion</option>
+		<option value="//api/name/initWithLength:preIndex:">- initWithLength:preIndex:</option>
 		
 	</optgroup>
 	
@@ -87,7 +85,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">YFBeaconManager Class Reference</h1>
+					<h1 class="title">YFLengthPre Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -95,8 +93,11 @@
 	<th>Inherits from</th>
 	<td>NSObject</td>
 </tr><tr>
+	<th>Conforms to</th>
+	<td>NSCoding</td>
+</tr><tr>
 	<th>Declared in</th>
-	<td>YFBeaconManager.h<br />YFBeaconManager.m</td>
+	<td>YFLengthPre.h<br />YFLengthPre.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -106,7 +107,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>获取蓝牙的类</p>
+						<p>路线前置点</p>
 					</div>
 					
 					
@@ -122,8 +123,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/delegate" title="delegate"></a>
-	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	<a name="//api/name/initWithLength:preIndex:" title="initWithLength:preIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithLength:preIndex:">&ndash;&nbsp;initWithLength:preIndex:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -133,12 +134,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>蓝牙回调</p>
+				<p>初始化</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;YFBeaconProtocol&gt; delegate</code></div>
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithLength:(double)<em>length</em> preIndex:(int)<em>preIndex</em></code></div>
 
 		    
 			
@@ -150,7 +151,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>蓝牙回调</p>
+				<p>初始化</p>
 			</div>
 			
 
@@ -161,15 +162,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
+				<p><code class="declared-in-ref">YFLengthPre.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/startScaningBeaconsInRegion" title="startScaningBeaconsInRegion"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startScaningBeaconsInRegion">&ndash;&nbsp;startScaningBeaconsInRegion</a></code>
+	<a name="//api/name/length" title="length"></a>
+	<h3 class="method-title"><code><a href="#//api/name/length">&nbsp;&nbsp;length</a></code>
 </h3>
 
 	<div class="method-info">
@@ -179,12 +180,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>在进入无蓝牙区域的时候开启扫描任务，再次进入蓝牙区域的时候重新进行定位</p>
+				<p>长度</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)startScaningBeaconsInRegion</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *length</code></div>
 
 		    
 			
@@ -196,7 +197,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>在进入无蓝牙区域的时候开启扫描任务，再次进入蓝牙区域的时候重新进行定位</p>
+				<p>长度</p>
 			</div>
 			
 
@@ -207,15 +208,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
+				<p><code class="declared-in-ref">YFLengthPre.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/startRangingBeaconsIsInDoor" title="startRangingBeaconsIsInDoor"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startRangingBeaconsIsInDoor">&ndash;&nbsp;startRangingBeaconsIsInDoor</a></code>
+	<a name="//api/name/preIndex" title="preIndex"></a>
+	<h3 class="method-title"><code><a href="#//api/name/preIndex">&nbsp;&nbsp;preIndex</a></code>
 </h3>
 
 	<div class="method-info">
@@ -225,12 +226,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>判断蓝牙是不是在停车场内</p>
+				<p>前置点在Points数组中的Index</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)startRangingBeaconsIsInDoor</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSNumber *preIndex</code></div>
 
 		    
 			
@@ -242,7 +243,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>判断蓝牙是不是在停车场内</p>
+				<p>前置点在Points数组中的Index</p>
 			</div>
 			
 
@@ -253,53 +254,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/autoMarkCarLocation" title="autoMarkCarLocation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/autoMarkCarLocation">&ndash;&nbsp;autoMarkCarLocation</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>自动标记车的位置</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)autoMarkCarLocation</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>自动标记车的位置</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">YFBeaconManager.h</code></p>
+				<p><code class="declared-in-ref">YFLengthPre.h</code></p>
 			</div>
 			
 			
