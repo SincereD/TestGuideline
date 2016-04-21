@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>YFCacheManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">YFSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">YellFun</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/checkFolderWithFolderPath:">- checkFolderWithFolderPath:</option>
+		
+		<option value="//api/name/createFloorFolderWith:floor:">- createFloorFolderWith:floor:</option>
+		
+		<option value="//api/name/createMapFolderWith:floor:">- createMapFolderWith:floor:</option>
+		
+		<option value="//api/name/createPathFolderWith:floor:">- createPathFolderWith:floor:</option>
+		
+		<option value="//api/name/createQuyuFolderWith:floor:">- createQuyuFolderWith:floor:</option>
+		
+		<option value="//api/name/createRegionFolderWith:">- createRegionFolderWith:</option>
+		
+		<option value="//api/name/createUnitFolderWith:floor:">- createUnitFolderWith:floor:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">YFCacheManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>YFCacheManager.h<br />YFCacheManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/checkFolderWithFolderPath:" title="checkFolderWithFolderPath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkFolderWithFolderPath:">&ndash;&nbsp;checkFolderWithFolderPath:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>检测文件夹是否存在</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)checkFolderWithFolderPath:(NSString *)<em>path</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>path</code></th>
+						<td><p>文件夹路径</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>存在返回YES，否则返回NO</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>检测文件夹是否存在</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFCacheManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createRegionFolderWith:" title="createRegionFolderWith:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createRegionFolderWith:">&ndash;&nbsp;createRegionFolderWith:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>创建区域缓存文件夹
+文件夹名为aRegion.name_aRegion.id
+@param aRegion</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createRegionFolderWith:(YFRegion *)<em>aRegion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>创建区域缓存文件夹
+文件夹名为aRegion.name_aRegion.id
+@param aRegion</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFCacheManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createFloorFolderWith:floor:" title="createFloorFolderWith:floor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createFloorFolderWith:floor:">&ndash;&nbsp;createFloorFolderWith:floor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在区域文件夹下创建楼层缓存文件夹
+文件夹名为aFloor.name_aFloor.id
+@param aRegion
+@param aFloor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createFloorFolderWith:(YFRegion *)<em>aRegion</em> floor:(YFFloor *)<em>aFloor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在区域文件夹下创建楼层缓存文件夹
+文件夹名为aFloor.name_aFloor.id
+@param aRegion
+@param aFloor</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFCacheManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createMapFolderWith:floor:" title="createMapFolderWith:floor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createMapFolderWith:floor:">&ndash;&nbsp;createMapFolderWith:floor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在楼层文件夹下创建地图缓存文件夹
+文件夹名为Map
+@param aRegion
+@param aFloor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createMapFolderWith:(YFRegion *)<em>aRegion</em> floor:(YFFloor *)<em>aFloor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在楼层文件夹下创建地图缓存文件夹
+文件夹名为Map
+@param aRegion
+@param aFloor</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFCacheManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createUnitFolderWith:floor:" title="createUnitFolderWith:floor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createUnitFolderWith:floor:">&ndash;&nbsp;createUnitFolderWith:floor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在楼层文件夹下创建单元缓存文件夹
+文件夹名为Unit
+@param aRegion
+@param aFloor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createUnitFolderWith:(YFRegion *)<em>aRegion</em> floor:(YFFloor *)<em>aFloor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在楼层文件夹下创建单元缓存文件夹
+文件夹名为Unit
+@param aRegion
+@param aFloor</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFCacheManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createQuyuFolderWith:floor:" title="createQuyuFolderWith:floor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createQuyuFolderWith:floor:">&ndash;&nbsp;createQuyuFolderWith:floor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在楼层文件夹下创建区域unit缓存文件夹</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createQuyuFolderWith:(YFRegion *)<em>aRegion</em> floor:(YFFloor *)<em>aFloor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在楼层文件夹下创建区域unit缓存文件夹</p>
+
+<p>@param aRegion
+@param aFloor</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFCacheManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createPathFolderWith:floor:" title="createPathFolderWith:floor:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createPathFolderWith:floor:">&ndash;&nbsp;createPathFolderWith:floor:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在楼层文件夹下创建路径缓存文件夹
+文件夹名为<a href="../Classes/Path.html">Path</a>
+@param aRegion
+@param aFloor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)createPathFolderWith:(YFRegion *)<em>aRegion</em> floor:(YFFloor *)<em>aFloor</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>在楼层文件夹下创建路径缓存文件夹
+文件夹名为<a href="../Classes/Path.html">Path</a>
+@param aRegion
+@param aFloor</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">YFCacheManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 YellFun. All rights reserved. Updated: 2016-04-21</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
